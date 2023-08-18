@@ -20,7 +20,7 @@ Sendo assim, crie queries SQL com as diretrizes abaixo:
 #### > Mapeamento do esquema ERRelacional
 ![Dio3](https://github.com/oiRudy/desafio_dio_3_BD/assets/139499341/d28cb683-425a-4fec-a703-7df5e91a0e3b)
 
-As principais informações que podem ser extradas e adiciandas apartir do modelo apresentado são:
+As principais informações que podem ser extraídas e adicionadas a partir do modelo apresentado são:
 
  - client: Representa os clientes do e-commerce, incluindo informações como nome, CPF, CNPJ, endereço, etc.
 
