@@ -1,0 +1,96 @@
+--Tabela Cliente
+Fname,Minit,Lname,CPF,CNPJ,Address
+Marcia,M,Silva,98765432100,,rua silva de prata 29, Caragola-Cidade das flores
+João,A,Santos,,12345678900,Av. das Palmeiras 123, Centro
+Maria,C,Oliveira,45678912300,,Rua das Flores 567, Jardim
+Pedro,R,Silveira,,98765432101,Rua das Pedras 45, Praia
+Ana,G,Pereira,98765432102,,Av. do Sol 789, Recanto
+
+--Tabela Pagamento
+idClient,typePayment,limitAvailable
+1,Boleto,500
+2,Debito,1000
+3,Credito,750
+4,Credito,300
+5,Boleto,200
+
+--Tabela Produto
+Pname,classification_kids,category,avaliation,size
+Headphone,false,Eletrônico,4,
+Barbie,true,Brinquedos,5,
+Smartphone,false,Eletrônico,4.5,
+Camiseta,false,Vestimenta,4,M
+TV LED,false,Eletrônico,4.8,55 polegadas
+
+--Tabela Pedido
+idOrder,idOrderClient,orderStatus,orderDescription,sendValue,paymentCash
+1,1,Confirmado,Debito,,1
+2,2,Confirmado,Credito,50,0
+3,3,Em Processamento,Boleto,25,0
+4,4,Em Processamento,Debito,15,0
+5,5,Cancelado,Credito,30,1
+
+--Tabela PedidoProduto
+idPOProduct,idPOrder,podQuantity,poStatus
+1,1,2,Em Estoque
+2,1,1,Sem Estoque
+3,2,3,Em Estoque
+4,3,2,Sem Estoque
+5,4,1,Em Estoque
+
+--Tabela Estoque
+idProdStorage,storageLocation,quantity
+1,Rio de Janeiro,1000
+2,São Paulo,500
+3,Belo Horizonte,750
+4,Curitiba,300
+5,Recife,200
+
+--Tabela LocalizacaoEstoque
+idLproduct,idStorage,location
+1,2,RJ
+2,1,SP
+3,4,MG
+4,3,PR
+5,5,PE
+
+--Tabela Fornecedor
+socialName,CNPJ,contact
+Almeida e Filhos,123456789123456,21982191712
+ABC Brinquedos,987654321987654,21953218888
+Tech Eletrônicos,456789123456789,11999887766
+Moda Fashion,789012345678901,3199556677
+Móveis de Luxo,111222333444555,4199887766
+
+--Tabela ProdutoFornecedor
+idPSupplier,idPsProduct,quantity
+1,1,1000
+1,2,500
+2,2,800
+3,3,1500
+4,4,300
+5,5,100
+
+--Tabela Vendedor
+socialName,AbstName,CNPJ,CPF,location,contact
+Tech Eletrônicos,,123456789123456,,Rio de Janeiro,2198291712
+Moda Fashion,,,12345678900,São Paulo,2195251515
+ABC Brinquedos,,987654321987654,,Belo Horizonte,3198887777
+Diversões Kids,,,98765432101,Recife,81977665544
+Móveis de Luxo,,111222333444555,,Curitiba,4199887766
+
+--Tabela ProdutoVendedor
+idPSeller,idpProduct,prodQuantity
+1,1,1000
+1,2,500
+2,2,800
+3,3,1500
+4,4,300
+5,5,100
+
+--Tabela Entrega
+1, 'Em Trânsito', ABCD1234
+2, 'Pendente', EFGH5678
+3, 'Entregue', IJKL9012
+4, 'Pendente', MNOP3456
+5, 'Entregue', QRST7890
